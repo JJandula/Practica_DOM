@@ -100,8 +100,8 @@ const products = [
 
 
   const galleryProducts = document.querySelector(".gallery")
-  console.log(galleryProducts)
 
+  //BUCLE PARA AÑADIR LOS PRODUCTOS
 
   for (const product of products) {
     const articulos = document.createElement("article")
@@ -147,8 +147,8 @@ const looks = [
   ];
 
   const galleryLooks = document.querySelector(".look")
-  console.log(galleryLooks)
 
+  //BUCLE PARA AÑADIR LOS LOOKS
 
   for (const look of looks) {
     const articulos = document.createElement("article")
