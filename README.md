@@ -1,4 +1,4 @@
-# Nude Project Style Web WITH DOM
+# Nude Project Style Web With DOM
 
 Este proyecto es una web inspirada en el diseño y estilo de Nude Project, una tienda de moda enfocada en streetwear y cultura urbana. La web replica un estilo visual moderno, minimalista y juvenil, orientada a la venta de productos de ropa y con un enfoque fresco y casual.
 
