@@ -33,6 +33,7 @@
 
 .menu-mobile {
   display: none;
+  margin-top: 10px;
 }
 
 .menu-mobile > nav > ul > li {
@@ -45,7 +46,7 @@
   border-bottom: var(--border);
 }
 
-@media (max-width: 700px) {
+@media (max-width: 850px) {
   .menu-mobile {
     display: block;
   }
@@ -57,7 +58,7 @@
   }
 }
 
-nav {
+.menu-desktop {
   border-bottom: var(--border);
 }
 
@@ -131,19 +132,6 @@ li {
   }
 }
 
-/* HERO */
-
-#banner_hero {
-  background-image: url("assets/banner-hero-products.jpg");
-  width: 100%;
-  height: 90vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-position: center;
-  background-size: cover;
-}
 
 /* PRODUCT GRID */
 
@@ -152,6 +140,7 @@ li {
   font-size: 14px;
   padding: var(--space);
   margin: var(--space) 0px 0px;
+  text-align: center;
 }
 
 .products {
@@ -163,6 +152,7 @@ li {
 }
 
 .gallery {
+  display: grid;
   padding: 0px var(--space);
   gap: 10px;
   grid-template-columns: repeat(4, 1fr);
@@ -194,6 +184,7 @@ li {
 
 .view-content {
   text-align: center;
+  margin-bottom: var(--space);
 }
 
 .view {
@@ -213,113 +204,219 @@ li {
   }
 }
 
-/* MID BANNER */
 
-.mid-banner {
-  background-image: url("assets/prendas-punto-banner.png");
+/* SHOPS */
+
+.shops {
+  background-image: url("assets/SHOP-LA-ROCA.webp");
   width: 100%;
-  height: 90vh;
-  background-position: center;
-  background-size: cover;
-  margin-top: 60px;
-}
-
-.banner-text {
+  height: 80vh;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 100%;
-  height: 90vh;
-}
-
-.banner-text h3 {
-  font-size: 26px;
-  font-weight: 900;
-  color: white;
-  text-shadow: var(--glow);
-  line-height: 25px;
-  letter-spacing: -.02em;
-  cursor: pointer;
-}
-
-.banner-text h4 {
-  font-size: 12px;
-  font-weight: 200;
-  color: white;
-  text-shadow: var(--glow);
-  line-height: normal;
-  letter-spacing: -.02em;
-  cursor: pointer;
-  margin-bottom: 10px;
-}
-
-
-
-.banner-text p {
-  margin-top: 20px;
-  font-size: 12px;
-  font-weight: 900;
-  color: white;
-  line-height: 25px;
-  letter-spacing: -.02em;
-  border-bottom: 1px white solid;
-  padding-bottom: 5px;
-  cursor: pointer;
-
-}
-
-@media (max-width: 1400px) {
-  .mid-banner {
-    height: 70vh;
-  }
-}
-
-@media (max-width: 1100px) {
-  .mid-banner {
-    height: 50vh;
-  }
-}
-
-@media (max-width: 768px) {
-  .mid-banner {
-    height: 40vh;
-  }
-}
-
-@media (max-width: 575px) {
-  .mid-banner {
-    height: 30vh;
-  }
-}
-
-/* BOTTOM BANNER */
-
-.bottom-banner {
-  background-image: url("assets/banner-pantalones.jpg");
-  width: 100%;
-  height: 100vh;
+  justify-content: left;
+  align-items: end;
   background-position: center;
   background-size: cover;
-  margin: var(--space) 0px;
+}
+
+.shops > div {
+  background-color: white;
+  padding: 22px 29px 23px 24px;
+  font-size: 12px;
+  display: grid;
+  margin: 0px 0px 80px 40px;
+  grid-template-areas:
+    "header header header"
+    "direction days horari"
+    "street street street"
+    "city city city";
+}
+
+.shops > div > h3 {
+  font-size: 18px;
+  margin-bottom: 18px;
+  grid-area: header;
+}
+
+.shops > div > p:nth-child(2) {
+  grid-area: direction;
+  margin-right: var(--space);
+}
+.shops div p:nth-child(3) {
+  grid-area: days;
+  margin-right: var(--space);
+}
+.shops div p:nth-child(4) {
+  grid-area: horari;
+}
+.shops div p:nth-child(5) {
+  grid-area: street;
+}
+.shops div p:nth-child(6) {
+  grid-area: city;
+}
+
+/* FOOTER */
+
+.footer-section {
+  display: flex;
+  justify-content: space-around;
+  font-size: 11px;
+  padding-top: 40px;
+  padding-bottom: 30px;
+  border: var(--border);
+}
+
+.footer-section > div > ul {
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.footer-section li:first-child {
+  font-weight: bolder;
+}
+
+.copy-text {
+  text-align: center;
+  font-size: 9px;
+  padding: 30px 0px;
 }
 
 @media (max-width: 768px) {
-  .bottom-banner {
-    height: 80vh;
+  .footer-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  .footer-section > div > ul {
+    margin-bottom: 50px;
+  }
+  .footer-section > div:last-child > ul {
+    margin-bottom: 0px;
   }
 }
 
-@media (max-width: 575px) {
-  .bottom-banner {
-    height: 60vh;
+
+/* ASIDE GRID */
+
+
+.order {
+  display: grid;
+  grid-template-columns: 15% 85%;
+  width: 100%;
+}
+
+.categories {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: left;
+  align-items: flex-start; */
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 20px;
+}
+
+.categories > li {
+  padding: 5px;
+  cursor: pointer;
+
+}
+.product-categories{
+  margin: 0px 0px 30px 10px;
+  font-weight: 900;
+}
+
+.nav-categories {
+  margin-bottom: 40px; 
+  border-top: var(--border);
+  
+}
+
+@media (max-width: 850px) {
+  .sec-categories {
+    display: none;
   }
+  .order{
+    display: block;
+  }
+}
+
+.categories-mobile > p{
+  font-weight: 900;
+  font-size: 12px;
+  text-align: center;
+  margin: 20px 0px 20px 0px;
+}
+
+.categories-mobile li{
+  margin: 0px 0px 20px 0px;
+}
+
+.categories > li:hover {
+  border-bottom: var(--border);
+}
+
+.categories-mobile > ul > li:hover {
+  border-bottom: var(--border);
+}
+
+/* PRODUCTS SPECS */
+
+.sizes-products {
+  display: none;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 12px;
+}
+
+.image-2{
+  display: none;
+  margin-bottom: 32px;
+}
+
+.sizes-products > p:hover {
+  cursor: pointer;
+  border-bottom: var(--border);
+}
+
+.no-space {
+  letter-spacing: 1px;
+}
+
+.products-specs{
+  display: block;
+}
+
+.products-article:hover {
+  .sizes-products {
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .image-1{
+    display: none;
+    
+  }
+  .image-2{
+    display: block;
+  }
+
+  .products-specs{
+    display: none;
+  }
+}
+
+.sizes-products > p:hover {
+  font-weight: 900;
+
 }
 
 /* LOOKS */
 
 .tittle-look {
-  padding: 30px;
+  padding: var(--space);
   font-size: 12px;
   color: var(--primary-color);
 }
@@ -417,97 +514,5 @@ li {
   }
   .products-look article:nth-child(4) {
     display: none;
-  }
-}
-
-/* SHOPS */
-
-.shops {
-  background-image: url("assets/SHOP-LA-ROCA.webp");
-  width: 100%;
-  height: 80vh;
-  display: flex;
-  justify-content: left;
-  align-items: end;
-  background-position: center;
-  background-size: cover;
-}
-
-.shops > div {
-  background-color: white;
-  padding: 22px 29px 23px 24px;
-  font-size: 12px;
-  display: grid;
-  margin: 0px 0px 80px 40px;
-  grid-template-areas:
-    "header header header"
-    "direction days horari"
-    "street street street"
-    "city city city";
-}
-
-.shops > div > h3 {
-  font-size: 18px;
-  margin-bottom: 18px;
-  grid-area: header;
-}
-
-.shops > div > p:nth-child(2) {
-  grid-area: direction;
-  margin-right: var(--space);
-}
-.shops div p:nth-child(3) {
-  grid-area: days;
-  margin-right: var(--space);
-}
-.shops div p:nth-child(4) {
-  grid-area: horari;
-}
-.shops div p:nth-child(5) {
-  grid-area: street;
-}
-.shops div p:nth-child(6) {
-  grid-area: city;
-}
-
-/* FOOTER */
-
-.footer-section {
-  display: flex;
-  justify-content: space-around;
-  font-size: 11px;
-  padding-top: 40px;
-  padding-bottom: 30px;
-  border: var(--border);
-}
-
-.footer-section > div > ul {
-  flex-direction: column;
-  cursor: pointer;
-}
-
-.footer-section li:first-child {
-  font-weight: bolder;
-}
-
-.copy-text {
-  text-align: center;
-  font-size: 9px;
-  padding: 30px 0px;
-}
-
-@media (max-width: 768px) {
-  .footer-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: wrap;
-    text-align: center;
-  }
-  .footer-section > div > ul {
-    margin-bottom: 50px;
-  }
-  .footer-section > div:last-child > ul {
-    margin-bottom: 0px;
   }
 }
