@@ -371,12 +371,12 @@ li {
 
 .image-2{
   display: none;
-  margin-bottom: 30px;
+  margin-bottom: 31px;
 }
 
 .sizes-products > p:hover {
   cursor: pointer;
-  border-bottom: var(--border);
+  font-weight: 900;
 }
 
 .no-space {
@@ -404,10 +404,6 @@ li {
   .products-specs{
     display: none;
   }
-}
-
-.sizes-products > p:hover {
-  font-weight: 900;
 }
 
 /* LOOKS */
