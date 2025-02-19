@@ -1,15 +1,14 @@
-# Nude Project Style Web With DOM
+# Portfolio
 
-Este proyecto es una web inspirada en el diseño y estilo de Nude Project, una tienda de moda enfocada en streetwear y cultura urbana. La web replica un estilo visual moderno, minimalista y juvenil, orientada a la venta de productos de ropa y con un enfoque fresco y casual.
+This is my personal portfolio website, developed using Vite for fast and optimized performance. It showcases various projects I've built with HTML, CSS, and JavaScript. Each project highlights different aspects of web development, including responsive design, interactive elements, and clean code practices.
 
-🛠 Tecnologías Utilizadas:
+## Features
 
-- HTML5 - Estructura de la página web.
-- CSS3 (SASS) - Diseño visual y estilización.
-- JS - Crear productos desde DOM.
-- Git - Control de versiones.
+- Built with Vite for lightning-fast development.
+- Projects created using HTML, CSS, and JavaScript.
+- Responsive design to ensure compatibility across devices.
+- Easy-to-navigate interface showcasing my development skills.
 
-🌎 Puedes visitar la web en: 
+Feel free to explore and check out my work!
 
-https://proyectodomjj.netlify.app/
-
+https://jjportfolioweb.netlify.app/
