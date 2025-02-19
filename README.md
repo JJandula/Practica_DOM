@@ -5,7 +5,7 @@ This is my personal portfolio website, developed using Vite for fast and optimiz
 ## Features
 
 - Built with Vite for lightning-fast development.
-- Projects created using HTML, CSS, and JavaScript.
+- Projects created using HTML, CSS and JavaScript.
 - Responsive design to ensure compatibility across devices.
 - Easy-to-navigate interface showcasing my development skills.
 
